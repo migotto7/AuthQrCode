@@ -5,6 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">@color/primary</item>
         <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="Theme.AuthQrCode" parent="Base.Theme.AuthQrCode" />

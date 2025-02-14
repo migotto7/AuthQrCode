@@ -50,6 +50,15 @@ dependencies {
     implementation(libs.androidx.camera.lifecycle)
     implementation(libs.androidx.camera.view)
 
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.3")
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.8.7")
+    implementation("androidx.navigation:navigation-ui-ktx:2.8.7")
+
+    implementation(libs.androidx.biometric)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

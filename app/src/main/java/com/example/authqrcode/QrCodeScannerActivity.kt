@@ -74,8 +74,6 @@ class QrCodeScannerActivity : AppCompatActivity() {
                     })
                 }
 
-
-
             try {
                 cameraProvider.unbindAll()
                 cameraProvider.bindToLifecycle(
@@ -97,6 +95,8 @@ class QrCodeScannerActivity : AppCompatActivity() {
                 TokenManager.saveToken(this@QrCodeScannerActivity, token)
                 withContext(Dispatchers.Main) {
                     Toast.makeText(this@QrCodeScannerActivity, "Token salvo!", Toast.LENGTH_SHORT).show()
+                    val tokenCompacted = token.substringBefore("@")
+                    sendTokenToApi(tokenCompacted, "4cb17e7b-d061-4067-9ea9-fd94b54d5ded")
                     navigateToHome()
                 }
             }
